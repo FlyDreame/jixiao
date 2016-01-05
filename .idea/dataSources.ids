@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source name="MySQL - kaohe@localhost" uuid="0567c30c-bc7f-4eb6-ab22-f418456a0a71">
+    <database-info product="MySQL" version="5.5.40" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.35 ( Revision: 5fb9c5849535c13917c2cf9baaece6ef9693ef27 )">
+      <extra-name-characters>#@</extra-name-characters>
+      <identifier-quote-string>`</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="lower" quoted-identifiers="lower"/>
+    <database-model serializer="dbm" rdbms="MYSQL" format-version="2.4">
+      <schema id="1" name="kaohe"/>
+      <table id="2" parent="1" name="task"/>
+      <table id="3" parent="1" name="user"/>
+      <table id="4" parent="1" name="departcate">
+        <comment>政府分类</comment>
+      </table>
+      <table id="5" parent="1" name="department">
+        <comment>政府部门</comment>
+      </table>
+      <column id="6" parent="2" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int(11) unsigned zerofill</data-type>
+      </column>
+      <key id="7" parent="2" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="8" parent="3" name="id">
+        <comment>账户ID</comment>
+        <mandatory>1</mandatory>
+        <data-type>int(11) unsigned zerofill</data-type>
+      </column>
+      <column id="9" parent="3" name="username">
+        <comment>账户名称</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(20)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="10" parent="3" name="password">
+        <comment>用户密码</comment>
+        <data-type>varchar(100)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="11" parent="3" name="department">
+        <comment>政府部门（id）</comment>
+        <data-type>int(11) unsigned zerofill</data-type>
+        <default-expression>&apos;00000000000&apos;</default-expression>
+      </column>
+      <column id="12" parent="3" name="departcategory">
+        <comment>政府分类（id）</comment>
+        <data-type>int(11) unsigned zerofill</data-type>
+        <default-expression>&apos;00000000000&apos;</default-expression>
+      </column>
+      <column id="13" parent="3" name="name">
+        <comment>用户姓名</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(20)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="14" parent="3" name="email">
+        <comment>个人邮箱</comment>
+        <data-type>varchar(200)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="15" parent="3" name="phone">
+        <comment>手机号码</comment>
+        <data-type>varchar(20)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="16" parent="3" name="level">
+        <comment>用户权限</comment>
+        <data-type>int(1)</data-type>
+        <default-expression>&apos;2&apos;</default-expression>
+      </column>
+      <index id="17" parent="3" name="name">
+        <columns>id
+level</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <key id="18" parent="3" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="19" parent="4" name="Id">
+        <comment>分类id</comment>
+        <mandatory>1</mandatory>
+        <data-type>int(11) unsigned zerofill</data-type>
+      </column>
+      <column id="20" parent="4" name="name">
+        <comment>分类名称</comment>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <key id="21" parent="4" name="PRIMARY">
+        <columns>Id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="22" parent="5" name="Id">
+        <comment>政府部门id</comment>
+        <mandatory>1</mandatory>
+        <data-type>int(11) unsigned zerofill</data-type>
+      </column>
+      <column id="23" parent="5" name="departcate">
+        <comment>部门分类（id）</comment>
+        <data-type>int(11) unsigned zerofill</data-type>
+        <default-expression>&apos;00000000000&apos;</default-expression>
+      </column>
+      <column id="24" parent="5" name="name">
+        <comment>政府名称</comment>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <key id="25" parent="5" name="PRIMARY">
+        <columns>Id</columns>
+        <primary>1</primary>
+      </key>
+    </database-model>
+  </data-source>
+</component>

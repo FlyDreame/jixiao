@@ -1,0 +1,13 @@
+body{
+    color: #ffffff;
+
+}
+a:focus, a:hover {
+    text-decoration: none;
+}
+a:active, a:hover {
+    text-decoration: none;
+}
+#wrap{
+    background: linear-gradient(135deg, #32d1ac 0%, #4a90e2 100%);
+}
