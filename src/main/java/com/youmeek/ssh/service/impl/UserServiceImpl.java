@@ -13,32 +13,32 @@ import java.io.Serializable;
  */
 @Service("userService")
 public class UserServiceImpl implements UserServiceI {
-	
-	private UserDaoI userDao;
 
-	public UserDaoI getUserDao() {
-		return userDao;
-	}
+    private UserDaoI userDao;
 
-	@Autowired
-	public void setUserDao(UserDaoI userDao) {
-		this.userDao = userDao;
-	}
+    public UserDaoI getUserDao() {
+        return userDao;
+    }
 
-	@Override
-	public Serializable saveUser(SysUser user) {
-		return userDao.saveUser(user);
-}
+    @Autowired
+    public void setUserDao(UserDaoI userDao) {
+        this.userDao = userDao;
+    }
 
-	@Override
-	public SysUser getUser(int userId) {
-		return userDao.getUser(userId);
-	}
+    @Override
+    public Serializable saveUser(SysUser user) {
+        return userDao.saveUser(user);
+    }
 
-	@Override
-	public SysUser getUserByName(String username) {
-		return userDao.getUserByName(username);
-	}
+    @Override
+    public SysUser getUser(int userId) {
+        return userDao.getUser(userId);
+    }
+
+    @Override
+    public SysUser getUserByName(String username) {
+        return userDao.getUserByName(username);
+    }
 
 
 }

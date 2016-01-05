@@ -1,49 +1,61 @@
-body{
+body {
     color: #ffffff;
     background: #f2f2f2;
 }
+
 a:focus, a:hover {
     text-decoration: none;
 }
+
 a:active, a:hover {
     text-decoration: none;
 }
-.home{
+
+.home {
     background: linear-gradient(135deg, #32d1ac 0%, #4a90e2 100%);
     padding: 30px 0 34px;
     margin-bottom: 20px;
 }
-.home-links{
+
+.home-links {
     text-align: right;
     padding-top: 5px;
 }
-.home-title{
+
+.home-title {
     font-size: 25px;
     color: #ffffff;
 }
-.home-title:hover{
+
+.home-title:hover {
     color: #ffffff;
 }
-.footer-con{
+
+.footer-con {
     text-align: center;
     color: #0f0f0f;
 }
-.home-main label{
+
+.home-main label {
     color: #999999;
 }
-.home-main{
+
+.home-main {
     margin-bottom: 100px;
 }
-.login-title{
+
+.login-title {
     color: #101010;
     margin-bottom: 20px;
     font-size: 20px;
 }
-.top_center{
+
+.top_center {
     background-color: #ffffff;
     border-radius: 5px;
     padding: 20px 0;
 }
-.message-tab{
+
+.message-tab {
     color: #222222;
 }

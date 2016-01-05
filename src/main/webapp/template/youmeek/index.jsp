@@ -4,9 +4,9 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <title>youmeekssh测试首页</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="keywords" content="" />
-    <meta name="description" content="" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="keywords" content=""/>
+    <meta name="description" content=""/>
     <script type="text/javascript" src="statics/js/jquery-1.6.1.min.js"></script>
 
     <style type="text/css">
@@ -19,13 +19,13 @@
             $("#btnSubmit").click(function () {
                 var userIdValue = $('#userId').val();
                 $.ajax({
-                    url:'/front/userController/getUser.do',
-                    type:'get',
-                    data:{
-                        id:userIdValue
+                    url: '/front/userController/getUser.do',
+                    type: 'get',
+                    data: {
+                        id: userIdValue
                     },
-                    dataType:'json',
-                    success:function(data){
+                    dataType: 'json',
+                    success: function (data) {
                         console.log(data);
                     }
                 });
@@ -45,15 +45,16 @@
 <%--页面主体内容 start--%>
 <p>
     <span style="font-size:medium; font-family:'微软雅黑';">
-    you know this is Hello World -- Judas.n 2014-04-06（<a href="http://YouMeek.com" target="_blank">http://YouMeek.com</a>）
+    you know this is Hello World -- Judas.n 2014-04-06（<a href="http://YouMeek.com"
+                                                          target="_blank">http://YouMeek.com</a>）
     </span>
 </p>
 <hr>
 <p>
 <form id="form1" name="form1" action="/front/userController/saveUser.do" method="post">
     新增用户：
-    <input type="text" id="name" name="name" value="" />
-    <input type="submit" value="提交" />
+    <input type="text" id="name" name="name" value=""/>
+    <input type="submit" value="提交"/>
 </form>
 </p>
 <hr>
@@ -61,8 +62,8 @@
 
 <form id="form1" name="form1">
     查询的用户ID：
-    <input type="text" id="userId" name="userId" value="" />
-    <input id="btnSubmit" name="btnSubmit" type="button" value="查询" />
+    <input type="text" id="userId" name="userId" value=""/>
+    <input id="btnSubmit" name="btnSubmit" type="button" value="查询"/>
 </form>
 </p>
 <%--页面主体内容 end--%>

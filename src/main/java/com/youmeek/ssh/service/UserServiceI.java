@@ -1,6 +1,7 @@
 package com.youmeek.ssh.service;
 
 import java.io.Serializable;
+
 import com.youmeek.ssh.domain.SysUser;
 
 /**
@@ -8,10 +9,10 @@ import com.youmeek.ssh.domain.SysUser;
  */
 public interface UserServiceI {
 
-	public Serializable saveUser(SysUser user);
+    public Serializable saveUser(SysUser user);
 
-	public SysUser getUser(int userId);
+    public SysUser getUser(int userId);
 
-	public SysUser getUserByName(String username);
-	
+    public SysUser getUserByName(String username);
+
 }

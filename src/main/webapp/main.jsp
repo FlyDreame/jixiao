@@ -20,15 +20,17 @@
             </div>
             <div class="col-sm-6 home-links">
                 <div class="btn-group">
-                    <button type="button" class="btn btn-info  dropdown-toggle btn-user" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                       ${user.username}<span class="caret"></span>
+                    <button type="button" class="btn btn-info  dropdown-toggle btn-user" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                        ${user.username}<span class="caret"></span>
                     </button>
                     <ul class="dropdown-menu">
-                        <li><a href="#"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>  个人资料</a></li>
-                        <li><a href="#"><span class="glyphicon glyphicon-send" aria-hidden="true"></span>  消息</a></li>
-                        <li><a href="#"><span class="glyphicon glyphicon-cog" aria-hidden="true"></span>  设置</a></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> 个人资料</a></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-send" aria-hidden="true"></span> 消息</a></li>
+                        <li><a href="#"><span class="glyphicon glyphicon-cog" aria-hidden="true"></span> 设置</a></li>
                         <li role="separator" class="divider"></li>
-                        <li><a href="/logout.do"><span class="glyphicon glyphicon-log-out" aria-hidden="true"></span>  登出</a></li>
+                        <li><a href="/logout.do"><span class="glyphicon glyphicon-log-out" aria-hidden="true"></span> 登出</a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -84,10 +86,14 @@
 
                 <!-- Nav tabs -->
                 <ul class="nav nav-tabs" role="tablist">
-                    <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">置顶消息</a></li>
-                    <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">最新动态</a></li>
-                    <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">最新通知</a></li>
-                    <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">还未处理</a></li>
+                    <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab"
+                                                              data-toggle="tab">置顶消息</a></li>
+                    <li role="presentation"><a href="#profile" aria-controls="profile" role="tab"
+                                               data-toggle="tab">最新动态</a></li>
+                    <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">最新通知</a>
+                    </li>
+                    <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">还未处理</a>
+                    </li>
                 </ul>
 
                 <!-- Tab panes -->

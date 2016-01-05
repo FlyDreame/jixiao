@@ -36,7 +36,8 @@
                 </div>
                 <div class="form-group">
                     <label for="exampleInputPassword1">密码</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="密码" name="password">
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="密码"
+                           name="password">
                 </div>
                 <button type="submit" class="btn btn-block btn-success">登录</button>
             </form>
