@@ -13,7 +13,7 @@ import java.io.Serializable;
 /**
  * Created by liumeng on 2016/1/6.
  */
-@Repository
+@Repository("DepartcateDao")
 public class DepartcateDaoImpl implements DepartcateDaoI {
 
     @Autowired

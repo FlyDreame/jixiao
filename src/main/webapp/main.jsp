@@ -22,7 +22,7 @@
                 <div class="btn-group">
                     <button type="button" class="btn btn-info  dropdown-toggle btn-user" data-toggle="dropdown"
                             aria-haspopup="true" aria-expanded="false">
-                        ${user.username}<span class="caret"></span>
+                        ${depart.name}<span class="caret"></span>
                     </button>
                     <ul class="dropdown-menu">
                         <li><a href="#"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> 个人资料</a></li>

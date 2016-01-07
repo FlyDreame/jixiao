@@ -14,6 +14,7 @@ import java.io.Serializable;
 @Service
 public class DepartcateServiceImpl implements DepartcateServiceI {
 
+    @Autowired
     private DepartcateDaoI departcateDao;
 
 

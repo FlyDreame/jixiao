@@ -2,6 +2,8 @@ package com.youmeek.ssh.controller;
 
 import com.youmeek.ssh.domain.SysUser;
 import com.youmeek.ssh.service.UserServiceI;
+import com.youmeek.ssh.domain.Depart;
+import com.youmeek.ssh.service.DepartServiceI;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -21,16 +23,10 @@ import java.util.UUID;
 @Controller
 @RequestMapping("/")
 public class UserController {
-    private UserServiceI userService;
-
-    public UserServiceI getUserService() {
-        return userService;
-    }
-
     @Autowired
-    public void setUserService(UserServiceI userService) {
-        this.userService = userService;
-    }
+    private UserServiceI userService;
+    @Autowired
+    private DepartServiceI departService;
 
     /**
      * 查询用户
@@ -135,7 +131,8 @@ public class UserController {
     public String main(String id, HttpServletRequest request, HttpSession httpSession) {
         if (httpSession.getAttribute("userid") != null) {
             SysUser sysUser = userService.getUser(Integer.parseInt(id));
-            request.setAttribute("user", sysUser);
+            Depart depart = departService.getDepart(sysUser.getDepartment());
+            request.setAttribute("depart", depart);
             return "main";
         } else {
             request.setAttribute("msgtitle", "访问失败");
