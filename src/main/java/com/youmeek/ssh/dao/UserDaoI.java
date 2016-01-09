@@ -1,6 +1,7 @@
 package com.youmeek.ssh.dao;
 
 import java.io.Serializable;
+import java.util.List;
 
 import com.youmeek.ssh.domain.SysUser;
 
@@ -13,4 +14,8 @@ public interface UserDaoI {
     public SysUser getUser(int userId);
 
     public SysUser getUserByName(String username);
+
+    public List<SysUser> getAllUser();
+
+    public void updateUser(SysUser user);
 }

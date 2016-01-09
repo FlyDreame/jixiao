@@ -19,8 +19,7 @@
                 <a href="index.jsp" class="home-title">地方政府绩效考核系统</a>
             </div>
             <div class="col-sm-6 home-links">
-                <a class="login" href="login.jsp">登录</a>
-                <a class="signup" href="signup.jsp">注册</a>
+                <a class="signup" href="login.jsp">登录</a>
             </div>
         </div>
     </div>

@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.io.Serializable;
+import java.util.List;
 
 /**
  * Created by liumeng on 2016/1/6.
@@ -26,5 +27,10 @@ public class DepartcateServiceImpl implements DepartcateServiceI {
     @Override
     public Departcate getDepartcate(int decateid) {
         return departcateDao.getDepartcate(decateid);
+    }
+
+    @Override
+    public List<Departcate> getAllDepartcate() {
+        return departcateDao.getAllDepartcate();
     }
 }

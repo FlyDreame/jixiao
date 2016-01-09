@@ -74,5 +74,15 @@ public class UserDaoImpl implements UserDaoI {
         return (SysUser) userlist.get(0);
     }
 
+    @Override
+    public List<SysUser> getAllUser() {
+        return (List<SysUser>) this.getCurrentSession().createQuery("from SysUser u").list();
+    }
+
+    @Override
+    public void updateUser(SysUser user) {
+        this.getCurrentSession().update(user);
+    }
+
 
 }

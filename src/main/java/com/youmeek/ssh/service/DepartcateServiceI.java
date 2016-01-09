@@ -1,6 +1,7 @@
 package com.youmeek.ssh.service;
 
 import java.io.Serializable;
+import java.util.List;
 
 import com.youmeek.ssh.domain.Departcate;
 
@@ -11,4 +12,6 @@ public interface DepartcateServiceI {
     public Serializable saveDepartcate(Departcate decate);
 
     public Departcate getDepartcate(int decateid);
+
+    public List<Departcate> getAllDepartcate();
 }

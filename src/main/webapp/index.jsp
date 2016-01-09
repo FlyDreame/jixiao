@@ -19,15 +19,14 @@
                 <a href="index.jsp" class="home-title">地方政府绩效考核系统</a>
             </div>
             <div class="col-sm-6 home-links">
-                <a class="login" href="login.jsp">登录</a>
-                <a class="signup" href="signup.jsp">注册</a>
+                <a class="signup" href="login.jsp">登录</a>
             </div>
         </div>
         <div class="row">
             <div class="col-xs-12 col-sm-10 col-sm-offset-1 text-center">
                 <h1>地方政府绩效考核系统</h1>
-                <h2>此系统仅为政府内部人员使用，请登录进入主页，注册请点击查看注册详情</h2>
-                <a class="signup signup-de" href="signup.jsp">查看注册详情 >></a>
+                <h2>此系统仅为政府内部人员使用，请登录进入主页，新部门请联系该部门分类管理员索要账号</h2>
+                <a class="signup signup-de" href="login.jsp">查看登录详情 >></a>
             </div>
         </div>
         <p class="nothing"></p>

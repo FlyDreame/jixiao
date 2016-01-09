@@ -9,6 +9,7 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Repository;
 
 import java.io.Serializable;
+import java.util.List;
 
 /**
  * Created by liumeng on 2016/1/6.
@@ -34,4 +35,6 @@ public class DepartDaoImpl implements DepartDaoI {
     public Depart getDepart(int deid) {
         return (Depart) this.getCurrentSession().get(Depart.class, deid);
     }
+
+
 }

@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.io.Serializable;
+import java.util.List;
 
 /**
  * @author Judas.n 2014年4月6日 22:49:19
@@ -38,6 +39,16 @@ public class UserServiceImpl implements UserServiceI {
     @Override
     public SysUser getUserByName(String username) {
         return userDao.getUserByName(username);
+    }
+
+    @Override
+    public List<SysUser> getAllUser() {
+        return userDao.getAllUser();
+    }
+
+    @Override
+    public void updateUser(SysUser user) {
+        userDao.updateUser(user);
     }
 
 

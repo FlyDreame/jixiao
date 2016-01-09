@@ -25,9 +25,10 @@
                         ${depart.name}<span class="caret"></span>
                     </button>
                     <ul class="dropdown-menu">
-                        <li><a href="#"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> 个人资料</a></li>
-                        <li><a href="#"><span class="glyphicon glyphicon-send" aria-hidden="true"></span> 消息</a></li>
-                        <li><a href="#"><span class="glyphicon glyphicon-cog" aria-hidden="true"></span> 设置</a></li>
+                        <li><a href="/user/index.do"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+                            后台</a></li>
+                        <li><a href="/user/address_book.do"><span class="glyphicon glyphicon-send"
+                                                                  aria-hidden="true"></span> 消息</a></li>
                         <li role="separator" class="divider"></li>
                         <li><a href="/logout.do"><span class="glyphicon glyphicon-log-out" aria-hidden="true"></span> 登出</a>
                         </li>

@@ -9,6 +9,7 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Repository;
 
 import java.io.Serializable;
+import java.util.List;
 
 /**
  * Created by liumeng on 2016/1/6.
@@ -32,5 +33,10 @@ public class DepartcateDaoImpl implements DepartcateDaoI {
     @Override
     public Departcate getDepartcate(int decateid) {
         return (Departcate) this.getCurrentSession().get(Departcate.class, decateid);
+    }
+
+    @Override
+    public List<Departcate> getAllDepartcate() {
+        return (List<Departcate>) this.getCurrentSession().createQuery("from Departcate de").list();
     }
 }
